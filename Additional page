@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Донцов Кирилл
+    </title>
+    <style>
+        body {
+            background: radial-gradient(circle at top, #2b2b2b, #454545);
+            font-family: Arial, sans-serif;
+            h1 {
+                margin-bottom: 40px;
+                text-align: center;
+                color: #ffffff;
+            }
+            h2l {
+                text-align: left;
+                color: #ffffff;
+                margin-bottom: 20px;
+                margin-right: 600px;
+                hyphens: auto;
+            }
+            h2r {
+                text-align: right;
+                color: #ffffff;
+                margin-bottom: 20px;
+                margin-left: 850px;
+                hyphens: auto;
+            }
+            img {
+                width: 800px;
+                height: 800px;
+                border: 4px solid white;
+                box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+            }
+            a {
+                color: #0066cc;
+            } .container {
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+              }
+            p1 {
+                font-family: Arial, sans-serif;
+                text-align: left;
+                color: #cfac01;
+                margin-left: 10px;
+                margin-right: 1000px;
+                hyphens: auto;
+            }
+            p {
+                font-family: Arial, sans-serif;
+                text-align: right;
+                color: #cfac01;
+                margin-right: 10px;
+                margin-left: 1000px;
+                hyphens: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<p1 style = "font-size: 25px; border-right: 4px solid red; padding-right: 30px"><a href="Main.html">Вернуться на основную страницу сайта</a></p1>
+<h1 style = "font-size: 55px;">
+    <q>Как я докатился до жизни такой?</q>
+</h1>
+<img src = "pictures/CS_VSU.jpg" style="float: left; margin-top: 140px; margin-left: 40px" alt="Картинка1">
+<p style = "font-size: 30px; padding: 70px">
+    На ЕГЭ кроме стандартного русского языка я сдавал профильную маетматику, физику и информатику. Экзамены прошли довольно успешно,
+    баллы по каждому из предметов переваливали за 75. В то время выбор у меня был таким: идти в ВГТУ на архитектора или в ВГУ на что-то связанное
+    с программированием. Но после подготовки к информатике и самого экзамена стало ясно, что код писать мне действительно нравится и вопрос был разрешён.
+    С факультетом определился сразу, оставалось выбрать направление
+
+    Мне много говворили об ИСИТе, но так же я слышал, что самой лучшей специальностью является программная инженерия. Когда смотрел варианты сам,
+    увидел, что на компьютерной безопасности бал тоже довольно высок. Итак, финальный "Топ 3" собран. А далее я просто расставил их в списке приоритетов
+    от высшего балла к низшему.
+
+    Если честно, был уверен, что пройду только на ИСИТ, да и сам туда хотел, но сложилось всё так, что компьютерная безопасность стала моей специальностью.
+
+    Сначала я даже немного расстроился, но потом всё обдумал и понял, что это даже к лучшему, тем более, что обучение мне нравится.
+
+    Вот и вся история. На основную страницу, если что, можно вернуться, нажав на ссылку над заглавием этой. Правый верхний угол.
+</p>
+</body>
+</html>
