@@ -2,97 +2,381 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>
-        Донцов Кирилл
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донцов Кирилл - Главная</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background: radial-gradient(circle at top, #2b2b2b, #454545);
             font-family: Arial, sans-serif;
+            padding: 40px 60px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 55px;
+        }
+
+        .left-title {
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: 30px;
+            margin-right: auto;
+            font-size: 40px;
+            max-width: 70%;
+        }
+
+        .right-title {
+            text-align: right;
+            color: #ffffff;
+            margin-bottom: 30px;
+            margin-left: auto;
+            font-size: 40px;
+            max-width: 70%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid white;
+            box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .img-left {
+            float: left;
+            margin: 10px 30px 20px 0;
+            width: 800px;
+        }
+
+        .img-right {
+            float: right;
+            margin: 10px 0 20px 30px;
+            width: 800px;
+        }
+
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff8800;
+            text-decoration: underline;
+        }
+
+        .text-right {
+            text-align: right;
+            color: #cfac01;
+            font-size: 30px;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .text-left {
+            text-align: left;
+            color: #cfac01;
+            font-size: 30px;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .content-block {
+            margin-bottom: 60px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-title {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #555;
+            border-radius: 8px;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff8800;
+            background: #ffffff;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background: #ff8800;
+            color: white;
+            padding: 12px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .submit-btn:hover {
+            background: #cc6600;
+        }
+
+        .form-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .error-message {
+            background: rgba(255, 0, 0, 0.2);
+            border: 2px solid #ff4444;
+            color: #ff8888;
+        }
+
+        .success-message {
+            background: rgba(0, 255, 0, 0.2);
+            border: 2px solid #44ff44;
+            color: #aaffaa;
+        }
+
+        max-width: 768px {
+            body {
+                padding: 20px;
+            }
+
             h1 {
-                margin-bottom: 40px;
-                text-align: center;
-                color: #ffffff;
+                font-size: 36px;
             }
-            h2l {
-                text-align: left;
-                color: #ffffff;
-                margin-bottom: 20px;
-                margin-right: 600px;
-                hyphens: auto;
+
+            .text-right, .text-left {
+                font-size: 18px;
             }
-            h2r {
-                text-align: right;
-                color: #ffffff;
-                margin-bottom: 20px;
-                margin-left: 850px;
-                hyphens: auto;
-            }
-            img {
-                width: 800px;
-                height: 500px;
-                border: 4px solid white;
-                box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
-            }
-            a {
-                color: #0066cc;
-            } .container {
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            }
-            p1 {
-                font-family: Arial, sans-serif;
-                text-align: left;
-                color: #cfac01;
-                margin-left: 10px;
-                margin-right: 1000px;
-                hyphens: auto;
-            }
-            p {
-                font-family: Arial, sans-serif;
-                text-align: right;
-                color: #cfac01;
-                margin-right: 10px;
-                margin-left: 1000px;
-                hyphens: auto;
+
+            .left-title, .right-title {
+                font-size: 24px;
             }
         }
     </style>
 </head>
-
 <body>
-<h1 style = "font-size: 55px;">
-    Донцов Кирилл
-</h1>
-<h2r style = "font-size: 40px;">
-    Итак, начнём с начала... Ну, не с самого, конечно
-</h2r>
-<img src = "studentCard.jpg" style="float: left; margin: 10px" alt="Картинка1">
-<p style = "font-size: 30px; padding: 70px">
-    Я студент первого курса Факультета Компьютерных Наук (далее ФКН) ВГУ.
-    Своё направление, а именно, компьютерную безопасность, выбрал практически случайно (подробнее о поисках ВУЗа, факультета и направления <a href="Story1.html">здесь</a>).
-    Но, знаете, ничуть об этом не жалею. Учёба действительно оказалась интересной (если обобщать, то уж точно). Уже с нетерпением жду какую-нибудь реальную практику,
-    хоть и понимаю, что пока что умею очень мало.
-</p>
-<h2l style = "font-size: 40px;">
-    А что же есть в моей жизни кроме учёбы?
-</h2l>
-<img src = "active.jpg" style="float: right; margin: 10px" alt="Картинка2">
-<p1 style = "font-size: 30px; padding: 70px">
-    
 
-    Конечно же Актив ФКН! Только недавно закончилась грандиозная студенческая весна и, уверен, мой факультет займёт дааалеко не последнее место.
-    Наш концерт назывался "От начала до конца". В этой истории мы рассказали о жизни одного обычного человека, а главное, о тех вещах, людях и событиях,
-    которые повлияли на него и сделали таким, каков он есть.
+<h1>Донцов Кирилл</h1>
 
-    Особенно мне понравились декорации -- две огромные лестницы с экранами на задней стороне, которые, прошу заметить, использовались в каждом номере.
-    Да, звучит это слабовато, но на деле они отлично дополняли все сцены и делали выступление по-настоящему уникальным.
+<div class="content-block">
+    <h2 class="right-title">
+        Итак, начнём с начала... Ну, не с самого, конечно
+    </h2>
 
-    Ну а запись нашего и многих других выступлений можно посмотреть <a href="https://vk.com/vsu_active">в группе "Актив ВГУ"</a> в ВК.
-    Примечание: группа иногда может быть закрыта, и в эти моменты ссылка работать не будет.
+    <div class="clearfix">
+        <img src="./pictures/studentCard.jpg" class="img-left" alt="Студенческий билет Кирилла">
+        <p class="text-right">
+            Я студент первого курса Факультета Компьютерных Наук (далее ФКН) ВГУ.
+            Своё направление, а именно, компьютерную безопасность, выбрал практически случайно (подробнее о поисках ВУЗа, факультета и направления <a href="Story1.html">здесь</a>).
+            Но, знаете, ничуть об этом не жалею. Учёба действительно оказалась интересной (если обобщать, то уж точно). Уже с нетерпением жду какую-нибудь реальную практику,
+            хоть и понимаю, что пока что умею очень мало.
+        </p>
+    </div>
+</div>
 
-    Больше информации конкретно об активе ФКН <a href="https://vk.com/csf_active">здесь</a><br&gt;
-    
+<div class="content-block">
+    <h2 class="left-title">
+        А что же есть в моей жизни кроме учёбы?
+    </h2>
 
-</p1>
+    <div class="clearfix">
+        <img src="./pictures/active.jpg" class="img-right" alt="Актив ФКН ВГУ">
+        <p class="text-left">
+            Конечно же Актив ФКН! Только недавно закончилась грандиозная студенческая весна и, уверен, мой факультет займёт дааалеко не последнее место.
+            Наш концерт назывался "От начала до конца". В этой истории мы рассказали о жизни одного обычного человека, а главное, о тех вещах, людях и событиях,
+            которые повлияли на него и сделали таким, каков он есть.
+
+            Особенно мне понравились декорации — две огромные лестницы с экранами на задней стороне, которые, прошу заметить, использовались в каждом номере.
+            Да, звучит это слабовато, но на деле они отлично дополняли все сцены и делали выступление по-настоящему уникальным.
+
+            Ну а запись нашего и многих других выступлений можно посмотреть <a href="https://vk.com/vsu_active&quot; target="_blank">в группе "Актив ВГУ"</a> в ВК.
+            Примечание: группа иногда может быть закрыта, и в эти моменты ссылка работать не будет.
+
+            Больше информации конкретно об активе ФКН <a href="https://vk.com/csf_active&quot; target="_blank">здесь</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-block">
+    <h2 class="right-title">
+        Обратная связь
+    </h2>
+
+    <div class="clearfix">
+        <img src="pictures/javaImg.svg" class="img-left" alt="Стилизованный логотип Java" style="width: 800px;">
+
+        <p class="text-right">
+            Сейчас я активно изучаю программирование на Java и мне это очень нравится. Стараюсь брать у преподавателя задания посложнее,
+            выполнять их на 100% и добавлять дополнительные функции.
+
+            У меня уже есть доволно множество проектов. Самые интересные: хоть и простая, но полностью работающая и затягивающая с первых минут игра,
+            а так же заготовка для сервиса вроде Авито с простой базой данных и хорошей сортировкой. Если вам нужна какая-либо программа, я с удовольствием могу
+            заняться этим, особенно если задача будет интересной.
+
+            Ниже вы можете оставить свои контактные данные и сообщение. Я обязательно его прочитаю!
+        </p>
+    </div>
+
+    <div class="form-container">
+        <h3 class="form-title">Напишите мне</h3>
+
+        <form id="feedbackForm" action="#" onsubmit="return false;">
+
+            <divclass="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.ru">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Ваш комментарий:</label>
+                <textarea id="comment" name="comment" placeholder="Напишите что-нибудь..."></textarea>
+            </div>
+
+            <button type="button" class="submit-btn" id="submitBtn">Отправить сообщение</button>
+
+        </form>
+
+        <div id="formResult"></div>
+    </div>
+</div>
+
+<script>
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        return emailRegex.test(email);
+    }
+
+    function showError(message) {
+        const resultDiv = document.getElementById('formResult');
+        resultDiv.innerHTML = `<div class="form-message error-message">${message}</div>`;
+    }
+
+    function showSuccessMessage(name, email, comment) {
+        const resultDiv = document.getElementById('formResult');
+        resultDiv.innerHTML = `
+            <div class="form-message success-message">
+                Спасибо, ${name}!
+
+                Ваши данные получены:
+
+                Email: ${email}
+
+                Комментарий: ${comment}
+
+                Я свяжусь с вами в ближайшее время!
+            </div>
+        `;
+    }
+
+    function handleSubmit() {
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const commentInput = document.getElementById('comment');
+
+        let name = nameInput.value.trim();
+        let email = emailInput.value.trim();
+        let comment = commentInput.value.trim();
+
+        const resultDiv = document.getElementById('formResult');
+        resultDiv.innerHTML = '';
+
+        if (name === '') {
+            showError('Ошибка: Поле "Имя" не должно быть пустым!');
+            return;
+        }
+
+        if (email === '') {
+            showError('Ошибка: Поле "Email" не должно быть пустым!');
+            return;
+        }
+
+        if (comment === '') {
+            showError('Ошибка: Поле "Комментарий" не должно быть пустым!');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            showError('Ошибка: Введите корректный email (например, name@mail.ru)!');
+            return;
+        }
+
+        showSuccessMessage(name, email, comment);
+    }
+
+    const submitButton = document.getElementById('submitBtn');
+
+    submitButton.addEventListener('click', handleSubmit);
+
+    const commentField = document.getElementById('comment');
+    commentField.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            handleSubmit();
+        }
+    });
+
+</script>
+
 </body>
 </html>
